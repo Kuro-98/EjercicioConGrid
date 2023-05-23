@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Titillium Web', sans-serif;
+  background: #25282f;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+p {
+  font-size: 14px;
+}
+
+.contenedor {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  height: 100vh;
+  grid-template-areas: "uno dos dos tres tres tres"
+    "uno dos dos cinco cinco cinco"
+    "cuatro dos dos cinco cinco cinco"
+    "cuatro dos dos cinco cinco cinco"
+    "cuatro dos dos seis siete ocho";
+}
+
+
+.contenedor .uno {
+  background: #AC473D;
+  grid-area: uno;
+  padding: 30px;
+}
+
+.contenedor .dos {
+  grid-area: dos;
+  background: #AC473D;
+  padding: 30px;
+
+}
+
+.contenedor .tres {
+  grid-area: tres;
+  background: #3351B3;
+  padding: 30px;
+}
+
+.contenedor .cuatro {
+  grid-area: cuatro;
+  background: #CAAE4F;
+  padding: 30px;
+}
+
+.contenedor .cinco {
+  background: #fff;
+  text-align: right;
+  padding-left: 200px;
+  padding: 30px;
+  grid-area: cinco;
+
+}
+
+.contenedor .cinco h1 {
+  line-height: 1.1em;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.contenedor .seis {
+  background: #fff;
+  grid-area: seis;
+  padding: 30px;
+}
+
+.contenedor .siete {
+  background: #3351B3;
+  padding: 30px;
+}
+
+.contenedor .ocho {
+  background: #CAAE4F;
+  padding: 30px;
+}
